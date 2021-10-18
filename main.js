@@ -15,16 +15,19 @@ const addOne = (arr) => {
 // CHALLENGE 2
 const addExclamation = (arr) => {
     // Solution code here...
+    let newArr = [];
     arr.forEach(function (item) {
-        item = item + `!`; 
+        newArr.push(item+"!"); 
+      
       });
-      return arr;
+      return newArr;
   };
   
   addExclamation(["one","two","three"]) // => ["one!","two!","three!"]
   
   
 // CHALLENGE 3
+
 // CHALLENGE 4
 // CHALLENGE 5
 // CHALLENGE 6
