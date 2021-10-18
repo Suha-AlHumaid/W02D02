@@ -1,7 +1,7 @@
+// -----HigherOrderAndCallBack-----
 // CHALLENGE 1
 
 const addOne = (arr) => {
-    // Solution code here...
     let newArr = [];
     arr.forEach(function (item) {
         newArr.push(item+1); 
@@ -14,7 +14,6 @@ const addOne = (arr) => {
   
 // CHALLENGE 2
 const addExclamation = (arr) => {
-    // Solution code here...
     let newArr = [];
     arr.forEach(function (item) {
         newArr.push(item+"!"); 
@@ -27,7 +26,6 @@ const addExclamation = (arr) => {
   
 // CHALLENGE 3
 const addOneByMap = (arr) => {
-    // Solution code here...
     let result = arr.map ((element) => {
 return element + 1;
      });
@@ -37,7 +35,6 @@ return element + 1;
   addOneByMap([10,11,12]) // => [11,12,13]
 // CHALLENGE 4
 const addQuestion = (arr) => {
-    // Solution code here...
     let result = arr.map ((element) => {
         return element + "?";
              });
@@ -49,7 +46,6 @@ const addQuestion = (arr) => {
   
 // CHALLENGE 5
 const forLoopTwoToThe = (arr) => {
-    // Solution code here...
     let result = arr.map ((element) => {
         return element=Math.pow(2,element);
              });
@@ -60,7 +56,6 @@ const forLoopTwoToThe = (arr) => {
   
 // CHALLENGE 6
 const typeNum = (arr) => {
-    // Solution code here...
     let result = arr.filter((element) => {
         return typeof element == 'number' ;
              });
@@ -72,7 +67,6 @@ const typeNum = (arr) => {
 
 // CHALLENGE 7
 const containsAnd = (arr) => {
-    // Solution code here...
     let result = arr.filter((element) => {
         
         return element.indexOf(`and`) ;
@@ -83,7 +77,6 @@ const containsAnd = (arr) => {
   
 // CHALLENGE 8
 const oddValues = (arr) => {
-    // Solution code here...
     let result = arr.filter((element) => {
         
         return (element % 2  );
@@ -95,7 +88,7 @@ const oddValues = (arr) => {
 // CHALLENGE 9
 
 const addValues = (arr) => {
-    // Solution code here...
+
     let result = arr.reduce((acc, element ,index) => {
         acc += element ;
         return acc;
@@ -110,7 +103,6 @@ const addValues = (arr) => {
   
 // CHALLENGE 10
 const countNumberOfElements = (arr) => {
-    // Solution code here...
     let result = arr.reduce((acc, element ,index) => {
         acc = ++index;
         return acc;
@@ -118,3 +110,22 @@ const countNumberOfElements = (arr) => {
              return result;
   };
   countNumberOfElements([1,2,3,4]);
+
+
+//-------Objects--------
+
+//CHALLENGE 1
+const checkValues = (obj, value) => {
+    return Object.values(obj).includes(value); 
+  };
+  
+//   checkValues({name:"ahmed",age:15},15) // => true
+//   checkValues({name:"ahmed",age:15},20) // => false
+  
+  
+
+//CHALLENGE 2
+//CHALLENGE 3
+//CHALLENGE 4
+//CHALLENGE 5
+//CHALLENGE 6
