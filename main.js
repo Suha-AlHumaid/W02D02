@@ -143,87 +143,76 @@ const updateNumbers = (obj) => {
   let nameSpilt = [];
   let str2 = "";
   const newNames = [];
-  const arr = []
-    
-  for (i=0; i<names.length;i++){
+  const arr = [];
+
+  for (i = 0; i < names.length; i++) {
     str = `${names[i]}`;
     nameSpilt = str.split(/(?=[A-Z])/);
     str2 = nameSpilt.join(" ");
     newNames.push(str2);
-
-}
-
-  for (i=0; i< newNames.length; i++){
-      arr.push(`${newNames[i]}: ${phones[i]}`)
   }
-     return arr;
+
+  for (i = 0; i < newNames.length; i++) {
+    arr.push(`${newNames[i]}: ${phones[i]}`);
+  }
+  return arr;
 };
 
 //CHALLENGE 4
 const PassedOrFailed = function (studentGrades) {
-    // TODO: Your code here
-    // var obj = {...studentGrades};
-    // let math =obj.math;
-    // let english =obj.english;
-    // let art = obj.art;
-    // let grade =0;
-    // let total=0;
-    let newobj={...studentGrades};
-    let =0;
-    let courseProparty =""
-       console.log(newobj);
-       console.log(newobj["math"]["grade"]);
-       
-       for (const course in newobj ){
+  // TODO: Your code here
 
-        // x =(newobj.course.grade / newobj.course.total)*100;
-        // x =(newobj["course"]["grade"] / newobj["course"]["total"])*100;
-if (x<=50) {
-    return "The student have passed" }
-    else 
-    {
-        return "The student have failed"
-    }
-}
-  };
+  let newobj = { ...studentGrades };
+const arr =[];
+let x=0;
+  for (const course in newobj) {
+arr.push(course);
+  }
+
+    x =(newobj[arr[0]]["grade"] / newobj[arr[0]]["total"])*100;
+    if (x>50) {
+        return "The student have passed" }
+        else
+        {
+            return "The student have failed"
+        }
   
-  const studentOne = {
-    math: { grade: 70, total: 120 },
-    english: { grade: 80, total: 100 },
-    art: { grade: 90, total: 100 }
-  };
-  
-  const studentTwo = {
-    math: { grade: 59, total: 120 },
-    english: { grade: 80, total: 100 },
-    art: { grade: 90, total: 100 }
-  };
-  
+};
+
+const studentOne = {
+  math: { grade: 70, total: 120 },
+  english: { grade: 80, total: 100 },
+  art: { grade: 90, total: 100 },
+};
+
+const studentTwo = {
+  math: { grade: 59, total: 120 },
+  english: { grade: 80, total: 100 },
+  art: { grade: 90, total: 100 },
+};
+
 //   PassedOrFailed(studentOne); // =>  "The student have passed"
 //   PassedOrFailed(studentTwo); // =>  "The student have failed"
-  
+
 //CHALLENGE 5
 const totalCharacters = (arr) => {
-    let str=arr.join("");
+  let str = arr.join("");
 
-    return str.length;
-  };
-  
-  totalCharacters(["abc","yz"]) // => 5
-  
+  return str.length;
+};
+
+totalCharacters(["abc", "yz"]); // => 5
+
 //CHALLENGE 6
 const houseSize = (arr) => {
-    // Solution code here...
-//     const obj = {};
-//     for (let i=0; i<arr.length;i++){
-//         obj.house=arr[i];
-//         obj.members =arr[++i];
-     
-//     }
-  
-//  console.log(obj);
-  };
-  
-//    houseSize(['Stark',7,'Arryn',3]) 
- //[{ house: 'Stark', members: 7 }, { house: 'Arryn', members: 3 }]
-  
+  // Solution code here...
+  //     const obj = {};
+  //     for (let i=0; i<arr.length;i++){
+  //         obj.house=arr[i];
+  //         obj.members =arr[++i];
+  //     }
+  //  console.log(obj);
+};
+
+//    houseSize(['Stark',7,'Arryn',3])
+//[{ house: 'Stark', members: 7 }, { house: 'Arryn', members: 3 }]
