@@ -156,9 +156,28 @@ const updateNumbers = (obj) => {
   for (i=0; i< newNames.length; i++){
       arr.push(`${newNames[i]}: ${phones[i]}`)
   }
-      console.log(arr);
+     return arr;
 };
 
 //CHALLENGE 4
 //CHALLENGE 5
+const totalCharacters = (arr) => {
+    let str=arr.join("");
+
+    return str.length;
+  };
+  
+  totalCharacters(["abc","yz"]) // => 5
+  
 //CHALLENGE 6
+const houseSize = (arr) => {
+    // Solution code here...
+    const newObj ={};
+
+    newObj["house"] ='Stark';
+    newObj["members"]=7;
+  };
+  
+   houseSize(['Stark',7,'Arryn',3])  //[{ house: 'Stark', members: 7 }, { house: 'Arryn', members: 3 }]
+  
+  
