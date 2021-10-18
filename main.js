@@ -205,15 +205,14 @@ totalCharacters(["abc", "yz"]); // => 5
 //CHALLENGE 6
 const houseSize = (arr) => {
   // Solution code here...
-  const arr1 = [];
+  const sizes = [];
   let obj = {};
   for (let i = 0; i < arr.length; i++) {
       obj= new Object();
     obj.house = arr[i++];
     obj.members = arr[i];
-    arr1.push(obj);}
-  console.log(obj);
-  console.log(arr1);
+    sizes.push(obj);}
+ return sizes;
 };
 //    houseSize(['Stark',7,'Arryn',3])
 //[{ house: 'Stark', members: 7 }, { house: 'Arryn', members: 3 }]
