@@ -160,6 +160,48 @@ const updateNumbers = (obj) => {
 };
 
 //CHALLENGE 4
+const PassedOrFailed = function (studentGrades) {
+    // TODO: Your code here
+    // var obj = {...studentGrades};
+    // let math =obj.math;
+    // let english =obj.english;
+    // let art = obj.art;
+    // let grade =0;
+    // let total=0;
+    let newobj={...studentGrades};
+    let =0;
+    let courseProparty =""
+       console.log(newobj);
+       console.log(newobj["math"]["grade"]);
+       
+       for (const course in newobj ){
+
+        // x =(newobj.course.grade / newobj.course.total)*100;
+        // x =(newobj["course"]["grade"] / newobj["course"]["total"])*100;
+if (x<=50) {
+    return "The student have passed" }
+    else 
+    {
+        return "The student have failed"
+    }
+}
+  };
+  
+  const studentOne = {
+    math: { grade: 70, total: 120 },
+    english: { grade: 80, total: 100 },
+    art: { grade: 90, total: 100 }
+  };
+  
+  const studentTwo = {
+    math: { grade: 59, total: 120 },
+    english: { grade: 80, total: 100 },
+    art: { grade: 90, total: 100 }
+  };
+  
+//   PassedOrFailed(studentOne); // =>  "The student have passed"
+//   PassedOrFailed(studentTwo); // =>  "The student have failed"
+  
 //CHALLENGE 5
 const totalCharacters = (arr) => {
     let str=arr.join("");
@@ -172,12 +214,16 @@ const totalCharacters = (arr) => {
 //CHALLENGE 6
 const houseSize = (arr) => {
     // Solution code here...
-    const newObj ={};
-
-    newObj["house"] ='Stark';
-    newObj["members"]=7;
+//     const obj = {};
+//     for (let i=0; i<arr.length;i++){
+//         obj.house=arr[i];
+//         obj.members =arr[++i];
+     
+//     }
+  
+//  console.log(obj);
   };
   
-   houseSize(['Stark',7,'Arryn',3])  //[{ house: 'Stark', members: 7 }, { house: 'Arryn', members: 3 }]
-  
+//    houseSize(['Stark',7,'Arryn',3]) 
+ //[{ house: 'Stark', members: 7 }, { house: 'Arryn', members: 3 }]
   
