@@ -48,6 +48,16 @@ const addQuestion = (arr) => {
   
   
 // CHALLENGE 5
+const forLoopTwoToThe = (arr) => {
+    // Solution code here...
+    let result = arr.map ((element) => {
+        return element=Math.pow(2,element);
+             });
+             return result;
+  };
+  
+  forLoopTwoToThe([1,2,3]) // => [2,4,8]
+  
 // CHALLENGE 6
 // CHALLENGE 7
 // CHALLENGE 8
