@@ -71,6 +71,16 @@ const typeNum = (arr) => {
   typeNum([1, 'bob' ,3]) // => [1,3]
 
 // CHALLENGE 7
+const containsAnd = (arr) => {
+    // Solution code here...
+    let result = arr.filter((element) => {
+        
+        return element.indexOf(`and`) ;
+             });
+             return result;
+  };
+  containsAnd(['panda', 'ran', 'and']) ;
+  
 // CHALLENGE 8
 // CHALLENGE 9
 // CHALLENGE 10
