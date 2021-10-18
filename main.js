@@ -170,7 +170,7 @@ arr.push(course);
   }
 for ( let i=0;i<arr.length;i++){
     x =(newobj[arr[i]]["grade"] / newobj[arr[i]]["total"])*100;
-    if (x>50) {
+    if (x>=50) {
         return "The student have passed" }
         else
         {
