@@ -208,11 +208,39 @@ const houseSize = (arr) => {
   const sizes = [];
   let obj = {};
   for (let i = 0; i < arr.length; i++) {
-      obj= new Object();
+    obj = new Object();
     obj.house = arr[i++];
     obj.members = arr[i];
-    sizes.push(obj);}
- return sizes;
+    sizes.push(obj);
+  }
+  return sizes;
 };
 //    houseSize(['Stark',7,'Arryn',3])
 //[{ house: 'Stark', members: 7 }, { house: 'Arryn', members: 3 }]
+
+//extra 6
+
+const uniqueDogs = {
+  max: { breed: "Labrador Retriever", color: "blond" },
+  rex: { breed: "German Shepherd", color: "black and brown" },
+  lucy: { breed: "Bulldog", color: "white" },
+  lucifer: { breed: "Chihuahua", color: "brown" },
+};
+
+const createDog = function (name, dogBreed, furColor) {
+  // TODO: Your code here
+  const namesArr = Object.keys(uniqueDogs);
+  let nameObj = name;
+  if (!namesArr.includes(name)) {
+    let nameObj = new Object();
+    nameObj.breed = dogBreed;
+    nameObj.members = furColor;
+    uniqueDogs[name] = nameObj;
+    return "Added the dog successfully";
+  }
+
+  return "The dog isn't unique enough :(";
+};
+
+createDog("luna", "Husky", "black and white"); // => "Added the dog successfully"
+createDog("rex", "Golden Retriever", "blond"); // => "The dog isn't unique enough :("
