@@ -149,6 +149,30 @@ const courseInfo = {
   
 
 //CHALLENGE 3
+const employesObj = {
+    GraceHopper: '222-303-5938',
+    AdaLovelace: '222-349-9842',
+    AlanTuring: '222-853-5933'
+  }
+  
+  //HR has asked you to change the data to make it easier to print so that it looks like this: 
+  
+  const employesArr =[
+    'Grace Hopper: 222-303-5938','Ada Lovelace: 222-349-9842','Alan Turing: 222-853-5933'
+  ]
+  
+  
+  const updateNumbers = (obj) => {
+    const names = Object.keys(obj);
+    const phones = Object.values(obj);
+    // const arr = {...obj};
+const arr = []
+for (i=0; i< names.length; i++){
+    arr.push(`${names[i]}: ${phones[i]}`)
+}
+    console.log(arr);
+  };
+  
 //CHALLENGE 4
 //CHALLENGE 5
 //CHALLENGE 6
