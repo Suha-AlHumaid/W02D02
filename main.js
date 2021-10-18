@@ -59,6 +59,17 @@ const forLoopTwoToThe = (arr) => {
   forLoopTwoToThe([1,2,3]) // => [2,4,8]
   
 // CHALLENGE 6
+const typeNum = (arr) => {
+    // Solution code here...
+    let result = arr.filter((element) => {
+        return typeof element == 'number' ;
+             });
+             return result;
+ 
+  };
+
+  typeNum([1, 'bob' ,3]) // => [1,3]
+
 // CHALLENGE 7
 // CHALLENGE 8
 // CHALLENGE 9
