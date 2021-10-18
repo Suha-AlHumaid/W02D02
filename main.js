@@ -82,5 +82,15 @@ const containsAnd = (arr) => {
   containsAnd(['panda', 'ran', 'and']) ;
   
 // CHALLENGE 8
+const oddValues = (arr) => {
+    // Solution code here...
+    let result = arr.filter((element) => {
+        
+        return (element % 2  );
+             });
+             return result;
+  };
+  oddValues([1,2,3])//returns [1,3]
+
 // CHALLENGE 9
 // CHALLENGE 10
