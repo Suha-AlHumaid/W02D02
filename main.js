@@ -93,4 +93,28 @@ const oddValues = (arr) => {
   oddValues([1,2,3])//returns [1,3]
 
 // CHALLENGE 9
+
+const addValues = (arr) => {
+    // Solution code here...
+    let result = arr.reduce((acc, element ,index) => {
+        acc += element ;
+        return acc;
+             });
+             return result;
+  };
+  
+  addValues([1,2,3,4]) // => 10
+  addValues([15,10,15,5]) // => 45
+  
+  
+  
 // CHALLENGE 10
+const countNumberOfElements = (arr) => {
+    // Solution code here...
+    let result = arr.reduce((acc, element ,index) => {
+        acc = ++index;
+        return acc;
+             });
+             return result;
+  };
+  countNumberOfElements([1,2,3,4]);
